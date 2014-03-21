@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Your New Jekyll Site</title>
+        <title>rChart, se non mastichi codice a colazione qui ci sono un paio di indicazioni utili</title>
         <meta name="viewport" content="width=device-width">
 
         <!-- syntax highlighting CSS -->
@@ -226,18 +226,177 @@
 	</g>
 </g>
 </svg>
-          <div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    
-      <li><span>21 Mar 2014</span> &raquo; <a href="/r/2014/03/21/rChart.html">rChart, se non mastichi codice a colazione qui ci sono un paio di indicazioni utili</a></li>
-    
-      <li><span>06 Mar 2014</span> &raquo; <a href="/r/2014/03/06/Come-ho-imparato-ad-amare-R.html">Come ho imparato ad amare R</a></li>
-    
-      <li><span>05 Mar 2014</span> &raquo; <a href="/jekyll/update/2014/03/05/welcome-to-jekyll.html">Welcome to Jekyll!</a></li>
-    
-  </ul>
+          <h2>rChart, se non mastichi codice a colazione qui ci sono un paio di indicazioni utili</h2>
+<p class="meta">21 Mar 2014</p>
+
+<div class="post">
+<p>Cerco una libreria di R che permetta l&#39;integrazione con d3js, che quindi produca grafici minimamente interattivi, già stilati con buon gusto e possibilmente che non mi richiedano troppi sforzi nel comprendere il codice. Trovo <a href="http://rcharts.io">rChart</a> e lo installo subito. Dagli esempi mi piace questo, si adatta a un mio dataset, quindi seguo il tutorial (in realtà due brevi comandi in R)</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">n1 &lt;- nPlot(Freq ~ Hair, group = &quot;Eye&quot;, data = hair_eye_male, type = &quot;multiBarChart&quot;)
+n1$print(&quot;chart3&quot;)
+</code></pre></div>
+<p>E questo è il codice che restituisce R direttamente nella console </p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;div id = &#39;chart3&#39; class = &#39;rChart nvd3&#39;&gt;&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+ $(document).ready(function(){
+      drawchart3()
+    });
+    function drawchart3(){  
+      var opts = {
+ &quot;dom&quot;: &quot;chart3&quot;,
+&quot;width&quot;:    800,
+&quot;height&quot;:    400,
+&quot;x&quot;: &quot;Hair&quot;,
+&quot;y&quot;: &quot;Freq&quot;,
+&quot;group&quot;: &quot;Eye&quot;,
+&quot;type&quot;: &quot;multiBarChart&quot;,
+&quot;id&quot;: &quot;chart3&quot; 
+},
+        data = [
+ {
+ &quot;Hair&quot;: &quot;Black&quot;,
+&quot;Eye&quot;: &quot;Brown&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             32 
+},
+{
+ &quot;Hair&quot;: &quot;Brown&quot;,
+&quot;Eye&quot;: &quot;Brown&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             53 
+},
+{
+ &quot;Hair&quot;: &quot;Red&quot;,
+&quot;Eye&quot;: &quot;Brown&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             10 
+},
+{
+ &quot;Hair&quot;: &quot;Blond&quot;,
+&quot;Eye&quot;: &quot;Brown&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:              3 
+},
+{
+ &quot;Hair&quot;: &quot;Black&quot;,
+&quot;Eye&quot;: &quot;Blue&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             11 
+},
+{
+ &quot;Hair&quot;: &quot;Brown&quot;,
+&quot;Eye&quot;: &quot;Blue&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             50 
+},
+{
+ &quot;Hair&quot;: &quot;Red&quot;,
+&quot;Eye&quot;: &quot;Blue&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             10 
+},
+{
+ &quot;Hair&quot;: &quot;Blond&quot;,
+&quot;Eye&quot;: &quot;Blue&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             30 
+},
+{
+ &quot;Hair&quot;: &quot;Black&quot;,
+&quot;Eye&quot;: &quot;Hazel&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             10 
+},
+{
+ &quot;Hair&quot;: &quot;Brown&quot;,
+&quot;Eye&quot;: &quot;Hazel&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             25 
+},
+{
+ &quot;Hair&quot;: &quot;Red&quot;,
+&quot;Eye&quot;: &quot;Hazel&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:              7 
+},
+{
+ &quot;Hair&quot;: &quot;Blond&quot;,
+&quot;Eye&quot;: &quot;Hazel&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:              5 
+},
+{
+ &quot;Hair&quot;: &quot;Black&quot;,
+&quot;Eye&quot;: &quot;Green&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:              3 
+},
+{
+ &quot;Hair&quot;: &quot;Brown&quot;,
+&quot;Eye&quot;: &quot;Green&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:             15 
+},
+{
+ &quot;Hair&quot;: &quot;Red&quot;,
+&quot;Eye&quot;: &quot;Green&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:              7 
+},
+{
+ &quot;Hair&quot;: &quot;Blond&quot;,
+&quot;Eye&quot;: &quot;Green&quot;,
+&quot;Sex&quot;: &quot;Male&quot;,
+&quot;Freq&quot;:              8 
+} 
+]
+
+      if(!(opts.type===&quot;pieChart&quot; || opts.type===&quot;sparklinePlus&quot;)) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? &#39;main&#39; : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .x(function(d) { return d[opts.x] })
+          .y(function(d) { return d[opts.y] })
+          .width(opts.width)
+          .height(opts.height)
+
+       d3.select(&quot;#&quot; + opts.id)
+        .append(&#39;svg&#39;)
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+&lt;/script&gt;
+</code></pre></div>
+<p>Bene e ora? Lo prendo e lo incollo in un file html. Lo apro e non succede nulla! Per forza, manca ancora un bel pezzetto. Nel <code>head</code> va messo questo</p>
+<div class="highlight"><pre><code class="text language-text" data-lang="text">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;nv.d3.min.css&quot;&gt; 
+&lt;script src=&quot;http://code.jquery.com/jquery-1.11.0.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;http://code.jquery.com/jquery-migrate-1.2.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://raw.githubusercontent.com/mbostock/d3/master/d3.min.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://raw.githubusercontent.com/novus/nvd3/master/nv.d3.min.js&quot;&gt;&lt;/script&gt;
+</code></pre></div>
+<p>Il css l&#39;ho scaricato e modificato per farci stare in altezza il grafico. Il jquery ce lo ha aggiunto il mio amico <a href="http://eidogram.com">Riccardo</a> mentre il js di d3 va aggiungo perché da questo dipende il js di nv. Entrambe possono essere presi direttamente dai repository su Github o messi in locale. 
+Salvato l&#39;html e aperto: ora va. A questo punto si possono modificare i dati direttamente nel codice o provare a generare con R altri grafici con altri dati esterni.</p>
+
 </div>
+
 
           <div class="footer">
             <div class="contact">

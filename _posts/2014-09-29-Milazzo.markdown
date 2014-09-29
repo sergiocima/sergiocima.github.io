@@ -7,7 +7,7 @@ categories: Knime
 # Fatti
 0.45 è l’ora in cui la Gazzetta del mezzogiorno colloca l’inizio dell’incendio
 # Pubblicazioni sul web
-- 0.49 sarakka71 pubblica il post: “incendio pauroso alla raffineria di Milazzo [https://twitter.com/sarakka71/status/515634209005010944/photo/1](http://example.com/ "Title") 
+- 0.49 sarakka71 pubblica il post: “incendio pauroso alla raffineria di Milazzo [https://twitter.com/sarakka71/status/515634209005010944/photo/1](https://twitter.com/sarakka71/status/515634209005010944/photo/1) 
 - 2.30 comune di Milazzo pubblica la notizia sul sito: “Incendio in corso alla Raffineria”
 - 3.00 comune di Milazzo: “Aggiornamento delle 3 incendio Raffineria. Situazione sotto controllo”
 - 3.02 ANSA: “Incendio alla raffineria, notte di paura a Milazzo poi fiamme domate”

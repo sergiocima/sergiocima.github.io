@@ -20,6 +20,7 @@ categories: Knime
 - 10.56 ANSA: “Rogo raffineria Milazzo,aperta inchiesta”
 - 16.55 Gazzetta del sud: “Ripreso incendio”
 - Qualche minuto dopo l’incendio viene completamente domato ([http://www.tn24.net/cronaca/](http://www.tn24.net/cronaca/))
+
 # Post su Twitter
 Analizzando i post pubblicati su Twitter si può stimare il numero di post dedicati all’incendio. La stringa di ricerca è la seguente: 
 - “milazzo OR raffineria OR #milazzo OR #raffineria OR rogo OR incendio”

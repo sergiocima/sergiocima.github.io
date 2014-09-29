@@ -170,7 +170,7 @@ Bene e ora? Lo prendo e lo incollo in un file html. Lo apro e non succede nulla!
     <script src="https://raw.githubusercontent.com/mbostock/d3/master/d3.min.js" charset="utf-8"></script>
     <script src="https://raw.githubusercontent.com/novus/nvd3/master/nv.d3.min.js"></script>
 
-Il css l'ho scaricato e modificato per farci stare in altezza il grafico. Il jquery ce lo ha aggiunto il mio amico [Riccardo][Link-Riccardo] mentre il js di d3 va aggiungo perché da questo dipende il js di nv. Entrambi possono essere presi direttamente dai repository su Github o messi in locale. 
+Il css l'ho scaricato e modificato per farci stare in altezza il grafico. Il jquery ce lo ha aggiunto [Riccardo][Link-Riccardo] mentre il js di d3 va aggiungo perché da questo dipende il js di nv. Entrambi possono essere presi direttamente dai repository su Github o messi in locale. 
 Salvato l'html e aperto: ora va. A questo punto si possono modificare i dati direttamente nel codice o provare a generare con R altri grafici con altri dati esterni.
 
 [Link-rChart]: http://rcharts.io

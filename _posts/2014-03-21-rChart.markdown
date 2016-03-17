@@ -174,4 +174,4 @@ Il css l'ho scaricato e modificato per farci stare in altezza il grafico. Il jqu
 Salvato l'html e aperto: ora va. A questo punto si possono modificare i dati direttamente nel codice o provare a generare con R altri grafici con altri dati esterni.
 
 [Link-rChart]: http://rcharts.io
-[Link-Riccardo]: http://eidogram.com
+[Link-Riccardo]: http://riccardoscalco.github.io

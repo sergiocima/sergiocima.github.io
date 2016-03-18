@@ -2,7 +2,7 @@
 layout: post
 title:  Incendio di Milazzo: analisi dei post su Twitter
 date:   2014-09-29 23:00:00
-categories: /Knime/Social/
+categories: /Knime/
 ---
 # Fatti
 0.45 è l’ora in cui la Gazzetta del mezzogiorno colloca l’inizio dell’incendio

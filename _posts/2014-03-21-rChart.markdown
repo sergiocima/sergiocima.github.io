@@ -2,7 +2,7 @@
 layout: post
 title:  rChart, indicazioni utili
 date:   2014-03-21 16:00:00
-categories: /R/Dataviz/
+categories: /R/
 ---
 
 Cerco una libreria di R che permetta l'integrazione con d3js, che quindi produca grafici minimamente interattivi, già stilati con buon gusto e possibilmente che non mi richiedano troppi sforzi nel comprendere il codice. Trovo [rChart][Link-rChart] e lo installo. Dagli esempi mi piace questo, si adatta a un mio dataset, quindi seguo il tutorial (in realtà due brevi comandi in R)

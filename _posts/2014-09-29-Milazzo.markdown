@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Incendio alla raffineria di Milazzo. Prototipo di analisi dei post su Twitter"
+title:  “Incendio di Milazzo: analisi dei post su Twitter"
 date:   2014-09-29 23:00:00
-categories: Knime
+categories: /Knime/
 ---
 # Fatti
 0.45 è l’ora in cui la Gazzetta del mezzogiorno colloca l’inizio dell’incendio

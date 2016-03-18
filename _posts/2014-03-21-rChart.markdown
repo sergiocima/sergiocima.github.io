@@ -2,10 +2,10 @@
 layout: post
 title:  "rChart, se non mastichi codice a colazione qui ci sono un paio di indicazioni utili"
 date:   2014-03-21 16:00:00
-categories: R
+categories: /R/
 ---
 
-Cerco una libreria di R che permetta l'integrazione con d3js, che quindi produca grafici minimamente interattivi, già stilati con buon gusto e possibilmente che non mi richiedano troppi sforzi nel comprendere il codice. Trovo [rChart][Link-rChart] e lo installo subito. Dagli esempi mi piace questo, si adatta a un mio dataset, quindi seguo il tutorial (in realtà due brevi comandi in R)
+Cerco una libreria di R che permetta l'integrazione con d3js, che quindi produca grafici minimamente interattivi, già stilati con buon gusto e possibilmente che non mi richiedano troppi sforzi nel comprendere il codice. Trovo [rChart][Link-rChart] e lo installo. Dagli esempi mi piace questo, si adatta a un mio dataset, quindi seguo il tutorial (in realtà due brevi comandi in R)
 
     n1 <- nPlot(Freq ~ Hair, group = "Eye", data = hair_eye_male, type = "multiBarChart")
     n1$print("chart3")
@@ -162,7 +162,7 @@ E questo è il codice che restituisce R direttamente nella console
         };
     </script>
 
-Bene e ora? Lo prendo e lo incollo in un file html. Lo apro e non succede nulla! Per forza, manca ancora un bel pezzetto. Nel <code>head</code> va messo questo
+Lo prendo e lo incollo in un file html. Lo apro e non succede nulla. Manca ancora un bel pezzetto. Nel <code>head</code> va messo questo
 
     <link rel="stylesheet" type="text/css" href="nv.d3.min.css"> 
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -170,8 +170,8 @@ Bene e ora? Lo prendo e lo incollo in un file html. Lo apro e non succede nulla!
     <script src="https://raw.githubusercontent.com/mbostock/d3/master/d3.min.js" charset="utf-8"></script>
     <script src="https://raw.githubusercontent.com/novus/nvd3/master/nv.d3.min.js"></script>
 
-Il css l'ho scaricato e modificato per farci stare in altezza il grafico. Il jquery ce lo ha aggiunto [Riccardo][Link-Riccardo] mentre il js di d3 va aggiungo perché da questo dipende il js di nv. Entrambi possono essere presi direttamente dai repository su Github o messi in locale. 
-Salvato l'html e aperto: ora va. A questo punto si possono modificare i dati direttamente nel codice o provare a generare con R altri grafici con altri dati esterni.
+Il css l'ho scaricato e modificato per farci stare in altezza il grafico. Il jquery me lo dà [Riccardo][Link-Riccardo] mentre il js di d3 va aggiungo perché da questo dipende il js di nv. Entrambi possono essere presi direttamente dai repository su Github o messi in locale. 
+Salvo l'html e apro: ora va. A questo punto posso modificare i dati direttamente nel codice o provare a generare con R altri grafici con altri dati esterni.
 
 [Link-rChart]: http://rcharts.io
 [Link-Riccardo]: http://riccardoscalco.github.io

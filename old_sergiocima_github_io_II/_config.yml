@@ -1,7 +1,0 @@
-name: "sergiocima.github.io"
-description: "Sergio Cima website"
-url: "http://sergiocima.github.io"
-
-paginate: 10
-markdown: redcarpet
-pygments: true

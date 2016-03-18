@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "R livello 0"
+title:  R livello 0
 date:   2014-03-06 00:50:18
 categories: /R/
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Incendio di Milazzo: analisi dei post su Twitter"
+title:  Incendio di Milazzo: analisi dei post su Twitter
 date:   2014-09-29 23:00:00
 categories: /Knime/
 ---

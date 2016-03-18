@@ -1,8 +1,11 @@
-- slug: R
+- slug: r
   name: R
 
-- slug: Dataviz
+- slug: dataviz
   name: Dataviz
 
-- slug: Social
+- slug: social
   name: Social
+  
+- slug: knime
+  name: Knime

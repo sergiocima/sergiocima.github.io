@@ -14,12 +14,12 @@ Some regions produce much more. In map below the regions which produce the half 
 
 ![Patent density in 2011](/file/patent2.png)
 
-I don’ know exactely what this does mean, [patent’s world is very complicated][link-patent]. [Riccardo][Link-Riccardo] 
+I don’ know exactely what this does mean, [patent’s world is very complicated][link-patent].
 
-Data: [Eurostat][link-eurostat]
-Shapefile: [Eurostat][link-shape]
-Mining: [Knime][link-knime]
-Viz: [QGIS][link-qgis]
+- Data: [Eurostat][link-eurostat]
+- Shapefile: [Eurostat][link-shape]
+- Mining: [Knime][link-knime]
+- Viz: [QGIS][link-qgis]
 
 [link-patent]: http://ec.europa.eu/eurostat/statistics-explained/index.php/Patent_statistics
 [link-eurostat]: http://ec.europa.eu/eurostat/en/web/products-datasets/-/TGS00040

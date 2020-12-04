@@ -9,8 +9,10 @@ categories: [dataviz]
 Un po' di visualizzazioni sulla situazione nelle regioni italiane
 
 ![Casi per 100k ab](https://raw.githubusercontent.com/sergiocima/Report-COVID-19/master/heat-map-regioni-casi.png)
-![Morti per 100k ab](https://raw.githubusercontent.com/sergiocima/Report-COVID-19/master/heat-map-regioni-morti.png)
 
+![Casi per 100k ab per fasce d'età](https://raw.githubusercontent.com/sergiocima/Report-COVID-19/master/heat-map-regioni-casi-eta_per%20100k%20abitanti.png)
+
+![Morti per 100k ab](https://raw.githubusercontent.com/sergiocima/Report-COVID-19/master/heat-map-regioni-morti.png)
 
 
 - Data: [Protezione Civile][link-pdc]

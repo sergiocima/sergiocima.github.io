@@ -3,7 +3,7 @@ layout: post
 title:  "Covid in Italy"
 subtitle: "Science"
 date:   2020-12-04 17:00:00
-categories: [dataviz,Knime]
+categories: [dataviz,knime]
 ---
 
 Un po' di visualizzazioni sulla situazione nelle regioni italiane

@@ -8,6 +8,8 @@ categories: [dataviz]
 
 Esperimenti con Observable
 
-[Grafico a linee Live index]: https://observablehq.com/d/a16a6fc084e3d748
+- [Grafico a linee Live index][live-index]
+- [Tabella interattiva per Covid-19][tabella-interattiva]
 
-[Tabella interattiva per Covid-19]: https://observablehq.com/d/9534d4f7bfb6f1f6
+[live-index]: https://observablehq.com/d/a16a6fc084e3d748
+[tabella-interattiva]: https://observablehq.com/d/9534d4f7bfb6f1f6

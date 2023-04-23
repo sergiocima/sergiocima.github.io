@@ -7,7 +7,7 @@ permalink: /about/
 
 Polifunzionale presso [Scienza in rete](https://www.scienzainrete.it)
 
-[Codepen](https://codepen.io/magnetee)
+[Codepen](https://codepen.io/magnete)
 
 [p5js.org](https://editor.p5js.org/sergiocima/sketches)
 

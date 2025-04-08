@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "La probabilità nel gioco d’azzardo"
+subtitle: "DProbabilità"
+date:   2024-03-01 22:52:00
+categories: [AI]
+---
+
+Per comprendere le insidie del gioco d'azzardo da un punto di vista logico e matematico, è essenziale avere una chiara comprensione dei concetti di probabilità ed equità.
+Esistono due definizioni storiche di probabilità. Una definizione classica, la probabilità di un evento è determinata dal rapporto tra il numero di scenari favorevoli all’evento stesso e il numero totale di scenari possibili, presupponendo che ogni scenario abbia identica probabilità di verificarsi. E una definizione frequentista: la probabilità di un evento si basa sulla frequenza con cui questo si verifica dopo un grande numero di tentativi, tutti effettuati nelle stesse condizioni.
+Entrambe queste definizioni chiariscono bene che la probabilità non può essere usata a sostegno di ragionamenti induttivi per trarre delle conclusioni sul futuro: da una moneta che cada a terra mostrandoci “testa” non possiamo ricavare nessuna informazione sull’esito del lancio successivo, dobbiamo, a posteriori, assistere a un numero infinito di lanci.
+
+Per questo il grande matematico Italiano Bruno de Finetti diceva provocatoriamente “la probabilità non esiste”: non è un fenomeno del mondo.
+
+È possibile per uno scommettitore elaborare strategie razionali basate su queste definizioni di probabilità? Consideriamo il classico esempio del lancio di una moneta: con solo due esiti possibili, la probabilità di ottenere testa (o croce) è del 50%. A lungo termine, in un numero ideale di lanci, testa e croce tendono a distribuirsi in egual modo. Dopo aver perso un euro puntando su testa e vedendo uscire croce, uno scommettitore potrebbe pensare di raddoppiare la posta su testa per recuperare la perdita. Questo metodo, noto come “martingala” o strategia del raddoppio, presume che, data la probabilità del 50% per ciascun esito, le perdite vengano eventualmente recuperate. Tuttavia, questa assunzione ignora il rischio di sequenze sfortunate prolungate. Di conseguenza, senza un capitale illimitato, lo scommettitore rischia di esaurire le risorse prima di poter recuperare le perdite, un rischio analogo a quello di chi scommette ripetutamente su numeri “ritardatari” nel lotto. Sembra che il giocatore sia vittima della certezza espressa dalla frase “testa ha la probabilità del 50% di accadere”. Infatti a de Finetti non piaceva, gli sembrava che fosse apodittica e che si richiamasse a uno stato di cose nel mondo che in realtà non è e spinga a ignorare il fatto che ogni lancio è indipendente dagli altri.
+
+Secondo de Finetti bisogna invece pensare alla probabilità come alla nostra propensione di scommettere una certa cifra sul verificarsi o meno di un determinato fenomeno in base alle nostre conoscenze. A mano a mano che le nostre conoscenze migliorano si può decidere di puntare di più o di meno.
+
+Una delle cose di cui tener conto è sicuramente l’equità del gioco. In un gioco equo il giocatore e il banco vincono e perdono allo stesso modo e hanno la stessa probabilità di vittoria. Ma nella realtà il banco ha un margine di guadagno: il premio restituito ai vincitori è inferiore a quanto versato per partecipare al gioco. La legge italiana consente che il banco abbia un vantaggio che può cambiare da un gioco all’altro, per esempio per la roulette francese è di circa lo 2,6%: vuol dire che per un numero abbastanza alto di giocate il banco restituisce ai giocatori 97,4 centesimi per ogni euro giocato. Nel lotto è ancor più svantaggioso per il giocatore: per ogni ruota vengono estratti 5 numeri su 90, se si punta su un solo numero quindi si hanno 5 possibilità di vincere su 90, cioè una su 18. La vittoria però viene premiata 11 volte il valore della somma puntata: se fosse un gioco equo pagherebbe 18 volte la somma. Il giocatore parte sconfitto.
+
+Quindi non c’è possibilità per il giocatore di usare strategie che lo conducano a vincite certe e consistenti. Tanto vale provare una volta a prendere il biglietto della lotteria ma mai provare a recuperare i soldi persi: si rischierebbe di perderne ancora di più.
+
+Ecco perché de Finetti concludeva con certezza: “La rovina dei giocatori è inevitabile”.

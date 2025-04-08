@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "La probabilità nel gioco d’azzardo"
-subtitle: "DProbabilità"
+subtitle: "Probabilità"
 date:   2024-03-01 22:52:00
 categories: [AI]
 ---

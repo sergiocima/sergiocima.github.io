@@ -1,0 +1,97 @@
+---
+layout: page
+title: "Articoli pubblicati sui media"
+permalink: /articoli/
+---
+
+<p class="arch-intro">Archivio dei pezzi usciti su carta e in rete fra il 2002 e il 2022:
+139 articoli, dalle cronache locali del <em>Corriere di Novara</em> alla rubrica
+<em>L'incertezza della medicina</em> su <em>PartecipaSalute</em>, alle pagine Salute del
+<em>Corriere della Sera</em>.</p>
+<p class="arch-note">I testi di PartecipaSalute sono ripubblicati alle condizioni della licenza
+Creative Commons BY-NC-ND del sito originale. Dei pezzi del <em>Corriere della Sera</em> è riportato
+il solo testo, con data e numero di pagina.</p>
+<div class="arch-filtri">
+<input type="search" id="q" placeholder="Cerca nel titolo o nella testata" autocomplete="off">
+<div class="arch-chips" id="chip-testate"><button class="on" data-te="">Tutte le testate</button><button data-te="Corriere della Sera">Corriere della Sera <span>14</span></button><button data-te="PartecipaSalute">PartecipaSalute <span>70</span></button><button data-te="Corriere di Novara">Corriere di Novara <span>47</span></button><button data-te="Internazionale">Internazionale <span>1</span></button><button data-te="Vita">Vita <span>1</span></button><button data-te="Milano University Press">Milano University Press <span>1</span></button><button data-te="Altri testi">Altri testi <span>5</span></button></div>
+<div class="arch-chips" id="chip-anni"><button class="on" data-a="">Tutti gli anni</button><button data-a="2022">2022</button><button data-a="2020">2020</button><button data-a="2019">2019</button><button data-a="2008">2008</button><button data-a="2007">2007</button><button data-a="2006">2006</button><button data-a="2005">2005</button><button data-a="2004">2004</button><button data-a="2003">2003</button><button data-a="2002">2002</button></div>
+</div>
+<p class="arch-conteggio" id="conteggio"></p>
+<ul class="arch-lista" id="lista"></ul>
+<script>
+var VOCI = [
+{% assign arts = site.pages | where: "sezione", "articoli" | sort: "permalink" | reverse %}
+{% for a in arts %}{"s": {{ a.permalink | jsonify }}, "t": {{ a.title | jsonify }}, "te": {{ a.testata | jsonify }}, "d": {{ a.data_it | jsonify }}, "a": {{ a.anno | jsonify }}}{% unless forloop.last %},{% endunless %}
+{% endfor %}];
+</script>
+{% raw %}
+<script>
+(function () {
+  var lista = document.getElementById('lista'),
+      conteggio = document.getElementById('conteggio'),
+      q = document.getElementById('q'),
+      fTe = '', fA = '';
+
+  function norm(s) { return (s || '').toLowerCase(); }
+
+  function disegna() {
+    var t = norm(q.value), n = 0, out = [];
+    for (var i = 0; i < VOCI.length; i++) {
+      var v = VOCI[i];
+      if (fTe && v.te !== fTe) continue;
+      if (fA && v.a !== fA) continue;
+      if (t && norm(v.t).indexOf(t) < 0 && norm(v.te).indexOf(t) < 0) continue;
+      n++;
+      out.push('<li><a href="' + v.s + '">' + v.t + '</a>' +
+               '<span class="arch-riga">' + v.te + (v.d ? ' &middot; ' + v.d : '') + '</span></li>');
+    }
+    lista.innerHTML = out.join('');
+    conteggio.textContent = n + (n === 1 ? ' articolo' : ' articoli');
+  }
+
+  function chips(id, attr, set) {
+    var box = document.getElementById(id);
+    box.addEventListener('click', function (e) {
+      if (e.target.tagName !== 'BUTTON') return;
+      var b = box.getElementsByTagName('button');
+      for (var i = 0; i < b.length; i++) b[i].className = '';
+      e.target.className = 'on';
+      set(e.target.getAttribute(attr) || '');
+      disegna();
+    });
+  }
+
+  chips('chip-testate', 'data-te', function (v) { fTe = v; });
+  chips('chip-anni', 'data-a', function (v) { fA = v; });
+  q.addEventListener('input', disegna);
+  disegna();
+})();
+</script>
+<style>
+.arch-intro, .arch-note { max-width: 40em; }
+.arch-note { font-size: .85em; opacity: .7; }
+.arch-filtri { margin: 1.6em 0 .6em; }
+.arch-filtri #q { width: 100%; max-width: 28em; padding: .5em .7em; font-size: 1em;
+  border: 1px solid #ccc; border-radius: 3px; }
+.arch-chips { margin: .7em 0; }
+.arch-chips button { font: inherit; font-size: .82em; padding: .28em .7em; margin: 0 .35em .4em 0;
+  border: 1px solid #ccc; background: transparent; border-radius: 2em; cursor: pointer; }
+.arch-chips button.on { background: #333; color: #fff; border-color: #333; }
+.arch-chips button span { opacity: .55; }
+.arch-conteggio { font-size: .82em; opacity: .6; margin: .4em 0 1em; }
+.arch-lista { list-style: none; padding: 0; margin: 0; }
+.arch-lista li { padding: .55em 0; border-bottom: 1px solid #eee; }
+.arch-lista li a { font-weight: 600; }
+.arch-riga { display: block; font-size: .8em; opacity: .6; margin-top: .15em; }
+.art-meta { font-size: .85em; opacity: .7; margin-bottom: .2em; }
+.art-firma { font-style: italic; margin-top: 0; }
+.art-nota, .art-fonte, .art-qualita { font-size: .82em; opacity: .65; }
+.art-fonte span, .meta-riga span { font-variant: small-caps; letter-spacing: .04em; opacity: .8; }
+.art-sez { font-size: .95em; margin: 1.6em 0 .3em; text-transform: none; }
+.art-qualita { margin-top: 2em; padding-top: .6em; border-top: 1px solid #eee; }
+.art-testo table { border-collapse: collapse; font-size: .88em; }
+.art-testo td, .art-testo th { border: 1px solid #ddd; padding: .35em .55em; text-align: left;
+  vertical-align: top; }
+.tab-wrap { overflow-x: auto; margin: 1em 0; }
+</style>
+{% endraw %}
